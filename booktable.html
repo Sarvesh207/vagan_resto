@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/4a978eedb6.js" crossorigin="anonymous"></script>
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a978eedb6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container">
+            <a class="navbar-brand" href=""><img src="./images/Greenish_logo_new.png" width="150px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn-outline-success" aria-current="page" href="./booktable.html">Book Table</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/special menu.png" class="d-block w-100 carosal-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/new_year.png" class="d-block w-100 carosal-img" alt="...">
+                    <!-- <video src="./ad_video/ad_video" controls></video> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Valetins-offer.png" class="d-block w-100 carosal-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+
+    <section id="form" data-aos="fade-up">
+        <div class="container">
+          <h3 class="form__title">Book Table</h3>
+          <div class="form__wrapper">
+            <form name="booking" method="POST" netlify>
+              <div class="form__group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="First Name" required>
+              </div>
+              <div class="form__group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="Last Name" required>
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+              </div>
+              <div class="form__group">
+                <label for="tableType">Table Type</label>
+                <select name="Table Type" id="tableType" required>
+                  <option selected disabled>Choose</option>
+                  <option value="small">Small(2 persons)</option>
+                  <option value="medium">Small(4 persons)</option>
+                  <option value="large">large(6 persons)</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="guestNumber">Guest Number</label>
+                <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+              </div>
+              <div class="form__group">
+                <label for="placement">Placement</label>
+                <select name="Placement" id="placement">
+                  <option selected disabled>Choose</option>
+                  <option value="outdoor">Outdoor</option>
+                  <option value="indoor">Indoor</option>
+                  <option value="rooftop">rooftop</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="Date" required>
+              </div>
+              <div class="form__group">
+                <label for="time">time</label>
+                <input type="time" id="time" name="Time" required>
+              </div>
+              <div class="form__group form__group__full">
+                <label for="note">Note</label>
+                <textarea name="Note" id="note" rows="4"></textarea>
+              </div>
+              <button type="submit" class=" primary-button">Book Table</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    
+    <!-- Footer statrt -->
+    <footer>
+        <div class="container-main flex footer-container">
+            <div class="footer-logo">
+                <a href="">
+                    <div class="logo-img"><img src="./images/Footerlogo.png" alt="" width="100%"></div>
+                </a>
+                <p class="footer-text">Fresh and delicious traditional Vegan food to delight the whole family.</p>
+                <h4 class="social-links">Follow Us</h4>
+
+
+                <ul class="flex scicial-icon-links">
+
+                    <li class="social-icon">
+
+                        <a href=""><i class="fa fa-facebook-square hover-link" style="font-size:24px"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="social-icon">
+
+                        <a href=""><i class="fa fa-instagram hover-link" style="font-size:24px"></i>
+                        </a>
+
+                    </li>
+
+
+                    <li class="social-icon">
+
+                        <a href=""><i class="fa fa-twitter-square hover-link" style="font-size:24px"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="links-column flex">
+                <h4>Links</h4>
+                <a class="hover-link" href="./index.html">Home</a>
+                <a class="hover-link" href="./menu.html">Menu</a>
+                <a class="hover-link" href="./about.html">About</a>
+                <a class="hover-link" href="./contact.html">Contact</a>
+                <!-- <a href="./booktable.html"></a> -->
+            </div>
+            <div class="links-column flex">
+                <h4>Support</h4>
+                <a class="hover-link" href="#">Conatact</a>
+                <a class="hover-link" href="#">Support Center</a>
+                <a class="hover-link" href="#">Feedback</a>
+
+            </div>
+            <div class="links-column flex">
+                <h4>Contact</h4>
+                <a class="hover-link" href="#">+918766513067</a>
+                <a class="hover-link" href="#">vegan@gmail.com</a>
+                <a class="hover-link" href="#">Amravati,Maharashtra</a>
+
+            </div>
+        </div>
+    </footer>
+    <div class="sub-footer">© copyright 2022 vegans Resto & Catering | All rights reserved</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
